@@ -43,7 +43,11 @@ ul {
     filter: invert();
 }
 
-.dark-mode .hero__title, .hero__subtitle, .projects__title, .link__anchor, .scroll__icon {
+.dark-mode .hero__title,
+.dark-mode .hero__subtitle,
+.dark-mode .projects__title,
+.dark-mode .link__anchor,
+.dark-mode .scroll__icon {
     color: white;
 }
 
@@ -122,6 +126,7 @@ nav {
     font-size: 24px;
     max-width: 450px;
     line-height: 2;
+    color: #242424;
 }
 
 .file-size {
