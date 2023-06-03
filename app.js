@@ -25,7 +25,9 @@ function toggleModal() {
     } else if (!modalShown) {
         document.querySelector('body').classList.add('modal__show')
         document.querySelector('body').classList.remove('delayed__transition')
-
+        document.querySelector('.modal__failed-state').style.display = 'none'
+        document.querySelector('.modal__success-state').style.display = 'none'
+        document.querySelector('.modal__loading-state').style.display = 'none'
     }
 }
 
