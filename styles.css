@@ -800,6 +800,9 @@ input:focus, textarea:focus {
         text-align: center;
         padding-top: 0;
     }
+    .responsive {
+        display: none
+    }
 }
 
 @media (max-width: 576px) {
