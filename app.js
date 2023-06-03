@@ -15,9 +15,9 @@ function contact(event) {
     });
 }
 
-function toggleModal(event) {
-    event.preventDefault()
+function toggleModal() {
     let modalShown = document.querySelector('body').classList.contains('modal__show')
+
     if (modalShown) {
         document.querySelector('body').classList.remove('modal__show')
         document.querySelector('body').classList.add('delayed__transition')
@@ -26,6 +26,17 @@ function toggleModal(event) {
         document.querySelector('body').classList.add('modal__show')
         document.querySelector('body').classList.remove('delayed__transition')
 
+    }
+}
+
+function moveBackground(event) {
+    let shapes = document.querySelectorAll('.shape')
+    let x = event.clientX / 20
+    let y = event.clientY / 20
+    for (let i = 0; i < shapes.length; i++) {
+        let isOdd = i % 2 === 1
+        let booleanInt = isOdd ? -1 : 1;
+        shapes[i].style.transform = `translate(${x * booleanInt}px, ${y * booleanInt}px) rotate(${x * 10}deg)`
     }
 }
 

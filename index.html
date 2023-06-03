@@ -17,7 +17,7 @@
     </script>
     <title>Adam Dokmak</title>
 </head>
-<body class>
+<body onmousemove="moveBackground(event)">
 <section id="hero">
     <nav>
         <figure>
@@ -25,7 +25,7 @@
         </figure>
         <ul class="nav__link--list">
             <li class="nav__link">
-                <a href="" onclick="toggleModal(event)" class="
+                <a href="#" onclick="toggleModal()" class="
             link__anchor
             link__hover">
                     About</a>
@@ -37,27 +37,38 @@
                     Projects</a>
             </li>
             <li class="nav__link">
-                <a href="" onclick="toggleModal(event)" class="
+                <a href="#" onclick="toggleModal()" class="
             link__anchor
             link__hover">
                     Contact</a>
             </li>
             <li class="nav__link click" onclick="darkMode()">
-                <a class="
+                <a href="#" class="
                 link__anchor
                 link__hover">
-                    <i class="fa-solid fa-circle-half-stroke dark-mode__icon" style="color: #000000;"></i>
+                    <i class="fa-solid fa-circle-half-stroke dark-mode__icon"></i>
                 </a>
             </li>
         </ul>
     </nav>
+    <img src="assets/semi%20circle.svg" class="shape shape--1" alt="">
+    <img src="assets/circle.svg" class="shape shape--2" alt="">
+    <img src="assets/squiggly.svg" class="shape shape--3" alt="">
+    <img src="assets/circle.svg" class="shape shape--4" alt="">
+    <img src="assets/triangle.svg" class="shape shape--5" alt="">
+    <img src="assets/circle.svg" class="shape shape--6" alt="">
+    <img src="assets/squiggly.svg" class="shape shape--7" alt="">
+    <img src="assets/circle.svg" class="shape shape--8" alt="">
+    <img src="assets/semi%20circle.svg" class="shape shape--9" alt="">
     <header class="header">
         <div class="header-content">
             <h1 class="hero__title">Hey <br> <span class="hero__title secondary-color">I'm Adam.</span></h1>
             <p class="hero__subtitle">
                 I'm a <span class="hero__subtitle bold secondary-color">Frontend Software Engineer</span> with a strong
                 passion for
-                building web applications with great user experiences. Here's a bit more <a href="" onclick="toggleModal(event)" class="hero__subtitle bold secondary-color">about
+                building web applications with great user experiences. Here's a bit more <a href="#"
+                                                                                            onclick="toggleModal()"
+                                                                                            class="hero__subtitle bold secondary-color">about
                 me</a>.
             </p>
             <div class="social__list">
@@ -73,23 +84,23 @@
             </div>
         </div>
     </header>
-    <a href="">
-        <button class="mail__button click" onclick="toggleModal(event)">
+    <a href="#">
+        <button class="mail__button click" onclick="toggleModal()">
             <i class="fa-solid fa-envelope contact-icon"></i>
         </button>
     </a>
     <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
     </a>
-</section>
-<div class="modal">
+    <div class="modal">
         <div class="modal__half modal__about">
             <div class="modal__text--container">
                 <h1 class="modal__title bold"> Here's a bit about me </h1>
                 <h2 class="modal__subtitle bold"> Frontend Software Engineer. </h2>
                 <h2 class="modal__about--para"> I'm an 18 year-old Moroccan <span class="secondary-color bold">frontend software engineer</span>
                     with experience
-                    developing websites for companies that faced major <span class="secondary-color bold">success</span> within their own
+                    developing websites for companies that faced major <span class="secondary-color bold">success</span>
+                    within their own
                     <span class="secondary-color bold">industries</span>.
                     <br>I currently solve difficult engineering and logical problems every day with <span
                             class="secondary-color bold">React</span>, <span
@@ -140,7 +151,7 @@
                     </div>
                     <div class="form__item">
                         <label class="form__item--label white-color bold">Message</label>
-                        <textarea class='input' name="message" required></textarea>
+                        <textarea class='input' name="message" style="height: 158px;" required></textarea>
                     </div>
                     <button id="form__send">Send Message</button>
                 </form>
@@ -155,10 +166,13 @@
                 The message failed to send, try again later.
             </div>
             <div>
-                <i class="fa-solid fa-xmark modal__exit click white-color" onclick="toggleModal(event)"></i>
+                <a href="#" onclick="toggleModal()">
+                    <i class="fa-solid fa-xmark modal__exit click white-color"></i>
+                </a>
             </div>
         </div>
     </div>
+</section>
 <section id="projects">
     <div class="row">
         <h1 class="projects__title bold">
@@ -167,16 +181,16 @@
         <ul class="project__list">
             <li class="project">
                 <figure class="project__image--container">
-                    <img src="./assets/blinker%20mockup.png" alt="" class="project__image">
+                    <img src="./assets/elevads.png" alt="" class="project__image">
                     <div class="project__image--overlay"></div>
                     <div class="project__image--description">
-                        <h1 class="project__title bold white-color">Google In-Store</h1>
-                        <h2 class="project__subtitle bold white-color">Html, CSS, JavaScript, Vue, Vuex</h2>
+                        <h1 class="project__title bold white-color">ElevAds</h1>
+                        <h2 class="project__subtitle bold white-color">Html, CSS, JavaScript</h2>
                         <p class="project__paragraph white-color">
-                            Google In-Store is a platform allowing Google retail employees to report any issues with
-                            their store products. Once an issue is reported, it is posted to an API which populates a
-                            separate platform's frontend - which is used by Google's vendors to fix the issue as soon as
-                            possible. I was the sole front-end developer of this application.
+                            Building Elevads' website involves front-end development for a user-friendly interface,
+                            back-end development for server-side functionalities, ad display and management integration,
+                            API utilization, security measures, and performance optimization to create a robust and
+                            engaging platform for their ad screen services.
 
                         </p>
                         <div class="project__description--links">
@@ -195,16 +209,16 @@
             </li>
             <li class="project">
                 <figure class="project__image--container">
-                    <img src="./assets/blinker%20mockup.png" alt="" class="project__image">
+                    <img src="./assets/dyslexia.png" alt="" class="project__image">
                     <div class="project__image--overlay"></div>
                     <div class="project__image--description">
-                        <h1 class="project__title bold white-color">Google In-Store</h1>
-                        <h2 class="project__subtitle bold white-color">Html, CSS, JavaScript, Vue, Vuex</h2>
+                        <h1 class="project__title bold white-color">Dyslexia</h1>
+                        <h2 class="project__subtitle bold white-color">Html, CSS, JavaScript</h2>
                         <p class="project__paragraph white-color">
-                            Google In-Store is a platform allowing Google retail employees to report any issues with
-                            their store products. Once an issue is reported, it is posted to an API which populates a
-                            separate platform's frontend - which is used by Google's vendors to fix the issue as soon as
-                            possible. I was the sole front-end developer of this application.
+                            Creating a website for a company specializing in dyslexia solutions requires front-end
+                            development for an accessible interface, back-end development for data handling, integration
+                            of dyslexia-specific tools, API utilization, security implementation, and performance
+                            optimization, to provide a comprehensive platform for dyslexia support services.
 
                         </p>
                         <div class="project__description--links">
@@ -223,7 +237,7 @@
             </li>
             <li class="project">
                 <figure class="project__image--container">
-                    <img src="./assets/blinker%20mockup.png" alt="" class="project__image">
+                    <img src="./assets/elevads.png" alt="" class="project__image">
                     <div class="project__image--overlay"></div>
                     <div class="project__image--description">
                         <h1 class="project__title bold white-color">Google In-Store</h1>
@@ -251,11 +265,10 @@
             </li>
         </ul>
     </div>
-
 </section>
 <footer id="footer">
     <div class="footer__container">
-        <a href="#hero">
+        <a href="#">
             <figure class="footer__image--wrapper">
                 <img src="assets/logo.png" alt="" class="footer__image">
                 <span class="top__button bold">Top <i class="fa-solid fa-arrow-up"></i></span>
@@ -263,16 +276,20 @@
         </a>
         <ul class="footer__links--list">
             <li class="footer__link">
-                <a href="https://github.com/adamdokmak" class="footer__link--anchor link__hover link__hover--white white-color">Github</a>
+                <a href="https://github.com/adamdokmak" target="_blank"
+                   class="footer__link--anchor link__hover link__hover--white white-color">Github</a>
             </li>
             <li class="footer__link">
-                <a href="https://www.linkedin.com/in/adamdokmak/" class="footer__link--anchor link__hover link__hover--white white-color">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/adamdokmak/" target="_blank"
+                   class="footer__link--anchor link__hover link__hover--white white-color">LinkedIn</a>
             </li>
             <li class="footer__link">
-                <a href="" onclick="toggleModal(event)" class="footer__link--anchor link__hover link__hover--white white-color">Contact</a>
+                <a href="#" onclick="toggleModal()"
+                   class="footer__link--anchor link__hover link__hover--white white-color">Contact</a>
             </li>
             <li class="footer__link">
-                <a href="./assets/resume.pdf" target="_blank" class="footer__link--anchor link__hover link__hover--white white-color">Resume</a>
+                <a href="./assets/resume.pdf" target="_blank"
+                   class="footer__link--anchor link__hover link__hover--white white-color">Resume</a>
             </li>
         </ul>
         <p class="footer__copyright white-color">Copyright © 2023 Adam Dokmak</p>
