@@ -253,9 +253,11 @@ nav {
     0% {
         transform: translateY(-5px);
     }
+
     50% {
         transform: translateY(-5px);
     }
+
     100% {
         transform: translateY(5px) scaleY(.8);
     }
@@ -361,7 +363,8 @@ nav {
     margin-bottom: 24px;
 }
 
-input, textarea {
+input,
+textarea {
     position: relative;
     width: 100%;
     outline: none;
@@ -377,7 +380,8 @@ textarea {
     resize: vertical;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: #61abb5;
 }
 
@@ -458,6 +462,7 @@ input:focus, textarea:focus {
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -610,7 +615,8 @@ input:focus, textarea:focus {
 .footer__container {
     display: flex;
     justify-content: center;
-    align-items: center;;
+    align-items: center;
+    ;
     flex-direction: column;
     width: 100%;
     max-width: 800px;
@@ -622,6 +628,7 @@ input:focus, textarea:focus {
     width: 75px;
     filter: invert();
 }
+
 .footer__copyright {
     text-align: center;
 }
@@ -788,18 +795,22 @@ input:focus, textarea:focus {
     .project__title {
         font-size: 28px;
     }
+
     .project__subtitle {
         font-size: 16px;
     }
+
     .footer__links--list {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .footer__link {
         width: 33%;
         text-align: center;
         padding-top: 0;
     }
+
     .responsive {
         display: none
     }
@@ -813,12 +824,16 @@ input:focus, textarea:focus {
     .project__description--links {
         margin: 0;
     }
-    .project__title, .project__subtitle {
+
+    .project__title,
+    .project__subtitle {
         text-align: center;
     }
+
     .footer__link {
         margin: 12px 24px;
     }
+
     .mail__button {
         display: none;
     }
