@@ -64,11 +64,12 @@
         <div class="header-content">
             <h1 class="hero__title">Hey <br> <span class="hero__title secondary-color">I'm Adam.</span></h1>
             <p class="hero__subtitle">
-                I'm a <span class="hero__subtitle bold secondary-color">Frontend Engineer</span> that designs
+                I'm a <span class="hero__subtitle bold secondary-color">Full Stack Engineer</span> that designs
                 and develops
-                websites with great user experiences. I also specialize in Marketing & Logistics. Here's a bit more <a href="#"
-                                                                                   onclick="toggleModal()"
-                                                                                   class="hero__subtitle bold secondary-color">about
+                websites with great user experiences. I also specialize in Marketing & Logistics. Here's a bit more <a
+                    href="#"
+                    onclick="toggleModal()"
+                    class="hero__subtitle bold secondary-color">about
                 me</a>.
             </p>
             <div class="social__list">
@@ -95,17 +96,19 @@
     <div class="modal">
         <div class="modal__half modal__about">
             <div class="modal__text--container">
-                <h1 class="modal__title bold"> Here's a bit about me </h1>
-                <h2 class="modal__subtitle bold"> Frontend Engineer. </h2>
+                <h1 class="modal__title bold">Here's a bit about me</h1>
+                <h2 class="modal__subtitle bold">Frontend Engineer.</h2>
                 <h2 class="modal__about--para"> I'm a 19 year-old Moroccan <span class="secondary-color bold">frontend developer</span>
                     with experience
                     developing websites for companies that faced major <span class="secondary-color bold">success</span>
                     within their own
                     <span class="secondary-color bold">industries</span>.
-                    <br>I currently solve engineering and logical problems every day with <span
-                            class="secondary-color bold">React</span>, <span
-                            class="secondary-color bold">TypeScript</span> and
-                    <span class="secondary-color bold">Next</span> within my clients' projects.</h2>
+                    <br>I have practical experience using basic web development languages. More importantly, I utilize
+                    sueprior libraries such as <span
+                            class="secondary-color bold">React</span> and its framework <span
+                            class="secondary-color bold">Next.js</span>. Using the superset of Javascript complies more
+                    with semantics as
+                    <span class="secondary-color bold">Typescript</span> provides more readable code.</h2>
                 <div class="languages__list">
                     <figure class="language language__image--container">
                         <img src="assets/languages/html.svg" alt="" class="language__image">
@@ -131,7 +134,10 @@
                         <img src="assets/languages/typescript.svg" alt="" class="language__image">
                         <span class="language__name bold">TypeScript</span>
                     </figure>
-
+                    <figure class="language">
+                        <img src="assets/languages/recoil-js.svg" alt="" class="language__image">
+                        <span class="language__name bold">Recoil</span>
+                    </figure>
                 </div>
             </div>
 
@@ -142,16 +148,19 @@
                 <h2 class="modal__subtitle white-color bold"> I'm currently open to new opportunities.</h2>
                 <form id="contact__form" onsubmit="contact(event)">
                     <div class="form__item">
-                        <label class="form__item--label white-color bold">Name</label>
-                        <input class='input' type="text" name="user_name" required>
+                        <label class="form__item--label white-color bold">Name
+                            <input class='input' type="text" name="user_name" required>
+                        </label>
                     </div>
                     <div class="form__item">
-                        <label class="form__item--label white-color bold">Email</label>
-                        <input class='input' type="email" name="user_email" required>
+                        <label class="form__item--label white-color bold">Email
+                            <input class='input' type="email" name="user_email" required>
+                        </label>
                     </div>
                     <div class="form__item">
-                        <label class="form__item--label white-color bold">Message</label>
-                        <textarea class='input' name="message" style="height: 158px;" required></textarea>
+                        <label class="form__item--label white-color bold">Message
+                            <textarea class='input' name="message" style="height: 158px;" required></textarea>
+                        </label>
                     </div>
                     <button id="form__send">Send Message</button>
                 </form>
@@ -181,85 +190,82 @@
         <ul class="project__list">
             <li class="project">
                 <figure class="project__image--container">
-                    <img src="./assets/elevads.png" alt="" class="project__image">
+                    <img src="./assets/LibraryApp.png" alt="" loading="lazy" class="project__image">
                     <div class="project__image--overlay"></div>
                     <div class="project__image--description">
-                        <h1 class="project__title bold white-color">ElevAds</h1>
-                        <h2 class="project__subtitle bold white-color">Html, CSS, JavaScript, Python    </h2>
+                        <h1 class="project__title bold white-color">Library App</h1>
+                        <h2 class="project__subtitle bold white-color">HTML, CSS, JavaScript, React</h2>
+                        <div class="project__icons">
+                            <a href="https://react-libraryapp.vercel.app" target="_blank" class=" social__link click">
+                                <i class="fa-solid fa-link white-color"></i>
+                            </a>
+                            <a href="https://github.com/adamdokmak/library-app-react" target="_blank" class="social__link click">
+                                <i class="fa-brands fa-github white-color"></i>
+                            </a>
+                        </div>
                         <p class="project__paragraph white-color">
-                            Building Elevads' website involves front-end development for a user-friendly interface,
-                            back-end development for server-side functionalities, ad display and management integration,
-                            API utilization, security measures, and performance optimization to create a robust and
-                            engaging platform for their ad screen services.
-
+                            Creating this library app involved a lot of problem-solving and critical thinking,
+                            especially when working on the JavaScript logic. This web app is fully functional and comes
+                            with features like dynamically changing books from a dataset, price filtering, cart
+                            functionality, and rapid navigation. Building this project required skills in API
+                            integration and the use of complex logic to make everything work seamlessly.
                         </p>
-                        <!--                        <div class="project__description&#45;&#45;links">-->
-                        <!--                            <a href="" target="_blank" class="project__link">-->
-                        <!--                                <i class="fa-sharp fa-solid fa-link white-color project-link-size click"></i>-->
-                        <!--                            </a>-->
-                        <!--                            <a href="https://www.instagram.com/adam_dokmak/" target="_blank" class="project__link">-->
-                        <!--                                <i class="fa-brands fa-instagram white-color project-link-size click"></i>-->
-                        <!--                            </a>-->
-                        <!--                            <a href="https://www.linkedin.com/in/adamdokmak/" target="_blank" class="project__link">-->
-                        <!--                                <i class="fa-brands fa-linkedin-in white-color project-link-size click"></i>-->
-                        <!--                            </a>-->
-                        <!--                        </div>-->
                     </div>
                 </figure>
             </li>
             <li class="project">
                 <figure class="project__image--container">
-                    <img src="./assets/DyslexaI.png" alt="" class="project__image">
+                    <img src="./assets/MovieApp.png" alt="" loading="lazy" class="project__image">
                     <div class="project__image--overlay"></div>
                     <div class="project__image--description">
-                        <h1 class="project__title bold white-color">Dyslexia</h1>
-                        <h2 class="project__subtitle bold white-color">React, TypeScript, Next</h2>
+                        <h1 class="project__title bold white-color">Movie Database</h1>
+                        <h2 class="project__subtitle bold white-color">HTML, CSS, JavaScript</h2>
+                        <div class="project__icons">
+                            <a href="https://movie--database-app.vercel.app" target="_blank"
+                               class=" social__link click">
+                                <i class="fa-solid fa-link white-color"></i>
+                            </a>
+                            <a href="https://github.com/adamdokmak/FES_FinalProject_JS" target="_blank" class="social__link click">
+                                <i class="fa-brands fa-github white-color"></i>
+                            </a>
+                        </div>
                         <p class="project__paragraph white-color">
-                            Creating a website for a company specializing in dyslexia solutions requires front-end
-                            development for an accessible interface, back-end development for data handling, integration
-                            of dyslexia-specific tools, API utilization, security implementation, and performance
-                            optimization, to provide a comprehensive platform for dyslexia support services.
-
+                            Developing this movie app presented a real-world challenge of integrating with an external
+                            API to build a dynamically updated movie database. Leveraging vanilla JavaScript, I
+                            successfully created optimal search functions and filters to handle the constant influx of
+                            new movie data. The task of fetching dynamic information and writing complex yet easily
+                            readable JavaScript code proved to be challenging, as I chose to relinquish the use of
+                            libraries or frameworks.
                         </p>
-                        <!--                        <div class="project__description&#45;&#45;links">-->
-                        <!--                            <a href="" target="_blank" class="project__link">-->
-                        <!--                                <i class="fa-sharp fa-solid fa-link white-color project-link-size click"></i>-->
-                        <!--                            </a>-->
-                        <!--                            <a href="https://www.instagram.com/adam_dokmak/" target="_blank" class="project__link">-->
-                        <!--                                <i class="fa-brands fa-instagram white-color project-link-size click"></i>-->
-                        <!--                            </a>-->
-                        <!--                            <a href="https://www.linkedin.com/in/adamdokmak/" target="_blank" class="project__link ">-->
-                        <!--                                <i class="fa-brands fa-linkedin-in white-color project-link-size click"></i>-->
-                        <!--                            </a>-->
-                        <!--                        </div>-->
                     </div>
                 </figure>
             </li>
             <li class="project">
                 <figure class="project__image--container">
-                    <img src="./assets/prestigeevents.png" alt="" class="project__image">
+                    <img src="./assets/NetflixClone.png" alt="" loading="lazy" class="project__image">
                     <div class="project__image--overlay"></div>
                     <div class="project__image--description">
-                        <h1 class="project__title bold white-color">Prestige Events</h1>
-                        <h2 class="project__subtitle bold white-color">TypeScript, React, Next</h2>
+                        <h1 class="project__title bold white-color">Netflix Clone</h1>
+                        <h2 class="project__subtitle bold white-color">HTML, Tailwind CSS, TypeScript, React, Next.js,
+                            FireBase</h2>
+                        <div class="project__icons">
+                            <a href="" target="_blank" class=" social__link click">
+                                <i class="fa-solid fa-link white-color"></i>
+                            </a>
+                            <a href="https://github.com/adamdokmak/Netflix-clone" target="_blank" class="social__link click">
+                                <i class="fa-brands fa-github white-color"></i>
+                            </a>
+                        </div>
                         <p class="project__paragraph white-color">
-                            Building a web app for Prestige, a ticketing platform, involves using HTML, CSS, and
-                            JavaScript/TypeScript with React and Next.js. Backend functionality is implemented with
-                            cloud functions, while frontend development focuses on intuitive interfaces. Features include event
-                            management, ticket inventory, search, user profiles, and secure payment integration.
+                            Building a functional Netflix clone was quite a journey, especially as a solo
+                            developer. This project involved handling authentication on the Back-End, including sign-up,
+                            sign-in, and sign-out functionality, and making sure user authentication persisted even
+                            after page reloads or system restarts. Another interesting part of the project was
+                            connecting to the dynamic movie database API, which was built using Next.js server-side
+                            rendering – a unique challenge in itself. Replicated the UI using front end tools was no
+                            easy task as it required design skills as well as extensive knowledge with styling.
 
                         </p>
-                        <!--                        <div class="project__description&#45;&#45;links">-->
-                        <!--                            <a href="" target="_blank" class="project__link">-->
-                        <!--                                <i class="fa-sharp fa-solid fa-link white-color project-link-size click"></i>-->
-                        <!--                            </a>-->
-                        <!--                            <a href="https://www.instagram.com/adam_dokmak/" target="_blank" class="project__link">-->
-                        <!--                                <i class="fa-brands fa-instagram white-color project-link-size click"></i>-->
-                        <!--                            </a>-->
-                        <!--                            <a href="https://www.linkedin.com/in/adamdokmak/" target="_blank" class="project__link">-->
-                        <!--                                <i class="fa-brands fa-linkedin-in white-color project-link-size click"></i>-->
-                        <!--                            </a>-->
-                        <!--                        </div>-->
                     </div>
                 </figure>
             </li>
