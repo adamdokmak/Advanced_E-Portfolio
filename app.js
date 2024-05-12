@@ -42,6 +42,10 @@ function moveBackground(event) {
     }
 }
 
-// template_ccfxqnc
-// service_ajqoypr
-// Y8W8pEBYE_phrKv1G
+function updateYear() {
+    const year = new Date().getFullYear().toString()
+    const yearEl = document.getElementById('year')
+    yearEl.innerText = year
+}
+
+updateYear()
